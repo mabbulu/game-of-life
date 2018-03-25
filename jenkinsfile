@@ -6,10 +6,10 @@ node {
 	   sh 'mvn package'
      }
      stage ('Archve') {
-           archiveArtifacts 'gameoflfe-web/target/*.war'
+           archiveArtifacts 'gameoflife-web/target/*.war'
      }
      stage ('Reports') {
-           junit 'gameoflfe-web/target/surefire-reports/*.xml'
+           junit 'gameoflife-web/target/surefire-reports/*.xml'
      }
 
 }
